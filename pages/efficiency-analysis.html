@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efficiency Analysis</title>
+    <link rel="shortcut icon" href="../assets/parking.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        .container {
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .table-title {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="project-introduction.html">Project Introduction</a></li>
+                <li><a href="business-case-studies.html">Business Case Studies</a></li>
+                <li><a href="efficiency-analysis.html" class="active">Efficiency Analysis</a></li>
+                <li><a href="code-snippets.html">Code Snippets</a></li>
+                <li><a href="individual-work.html">Individual Work</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="intro"><h1>Efficiency Analysis of Functionality</h1></section>
+    </main>
+
+    <div class="container">
+        <h2 class="table-title">Functionality Efficiency Analysis</h2>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Serial No.</th>
+                    <th>Functionality</th>
+                    <th>Time Complexity</th>
+                    <th>Space Complexity</th>
+                    <th>Algorithms Used</th>
+                    <th>Data Structures Used</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Add Place</td>
+                    <td>O(1)</td>
+                    <td>O(n)</td>
+                    <td>None</td>
+                    <td>Hash Map, Vector</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Delete City</td>
+                    <td>O(n)</td>
+                    <td>O(n)</td>
+                    <td>None</td>
+                    <td>Hash Map, Vector</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Add Connection</td>
+                    <td>O(1)</td>
+                    <td>O(n)</td>
+                    <td>None</td>
+                    <td>Hash Map, Adjacency Matrix</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Display City</td>
+                    <td>O(n)</td>
+                    <td>O(n)</td>
+                    <td>None</td>
+                    <td>Hash Map, Vector</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Display City BFS</td>
+                    <td>O(V + E)</td>
+                    <td>O(V + E)</td>
+                    <td>BFS</td>
+                    <td>Queue, Hash Map</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Find Nearest Parking</td>
+                    <td>O(E log V)</td>
+                    <td>O(V + E)</td>
+                    <td>Dijkstra</td>
+                    <td>Priority Queue, Hash Map</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Check Path Existence</td>
+                    <td>O(V^3)</td>
+                    <td>O(V^2)</td>
+                    <td>Warshall Algorithm</td>
+                    <td>Adjacency Matrix</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Block/Unblock Parking Spot</td>
+                    <td>O(1)</td>
+                    <td>O(1)</td>
+                    <td>None</td>
+                    <td>Hash Map</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Sort Cities by Parking</td>
+                    <td>O(n^2)</td>
+                    <td>O(n)</td>
+                    <td>Insertion Sort</td>
+                    <td>Vector</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>KMP Search</td>
+                    <td>O(n + m)</td>
+                    <td>O(m)</td>
+                    <td>KMP</td>
+                    <td>Array</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
